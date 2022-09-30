@@ -1,0 +1,83 @@
+body{
+	border: 1px solid #000;
+	display: grid;
+	grid-template-areas:
+    'header header header'
+    'left top top'
+    'left middle right'
+    'left bottom right'
+    'footer footer footer';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr auto 4fr auto auto;
+}
+
+.header{
+	grid-area: header;
+	background-color: lightblue;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: lightblue;
+}
+
+.left{
+	grid-area: left;
+	background-color: peachpuff;
+}
+
+.top{
+	grid-area: top;
+	background-color: lightgreen;
+}
+
+.right{
+	grid-area: right;
+	background-color: peachpuff;
+}
+
+.bottom{
+	grid-area: bottom;
+	background-color: lightgreen;
+}
+
+.middle{
+	grid-area: middle;
+	background-color: whitesmoke;
+}
+
+.block{
+	padding: 2vh;
+}
+
+.headersign{
+	background-color: white;
+	max-width: 25%;
+	margin-left: 3vw;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-right: 0.5vw;
+	padding-left: 0.5vw;
+	text-align: center;
+}
+
+.footersign{
+	background-color: white;
+	max-width: 25%;
+	margin-right: 3vw;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-right: 0.5vw;
+	padding-left: 0.5vw;
+	text-align: center;
+}
+
+.anime-girl-img{
+	width: 20vw;
+	height: auto;
+}
+
+.c-img{
+	width: auto;
+	height: 10vh;
+}
