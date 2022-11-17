@@ -1,0 +1,124 @@
+body{
+	border: 1px solid #000;
+	display: grid;
+	grid-template-areas:
+    'header header header'
+    'left top top'
+    'left middle right'
+    'left bottom right'
+    'footer footer footer';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: fit-content(50px) fit-content(50px) 4fr fit-content(50px) fit-content(50px);
+}
+
+.header{
+	grid-area: header;
+	background-color: lightblue;
+
+	align-items: center;
+	
+	display: grid;
+	grid-template-columns: 2fr 6fr;
+}
+
+.headersign{
+	
+	margin-left: 15%;
+	margin-right: 15%;
+	
+}
+
+.headersign-text{
+	background-color: white;
+	
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	
+	text-align: center;
+}
+
+.headertext{
+	
+	text-align: right;
+	
+}
+
+
+.footer{
+	grid-area: footer;
+	background-color: lightblue;
+
+	align-items: center;
+	
+	display: grid;
+	grid-template-columns: 5fr 2fr;
+}
+
+.footersign{
+
+	margin-left: 15%;
+	margin-right: 15%;
+
+}
+
+.footersign-text{
+	background-color: white;
+	
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	
+	text-align: center;
+}
+
+.footertext{
+	
+	text-align: left;
+	
+}
+
+.left{
+	grid-area: left;
+	background-color: peachpuff;
+
+
+}
+
+.top{
+	grid-area: top;
+	background-color: lightgreen;
+	text-align: center;
+}
+
+.right{
+	grid-area: right;
+	background-color: peachpuff;
+}
+
+.bottom{
+	grid-area: bottom;
+	background-color: lightgreen;
+	text-align: center;
+}
+
+.middle{
+
+	grid-area: middle;
+	background-color: whitesmoke;
+}
+
+.block{
+	padding: 10px;
+}
+
+
+.anime-girl-helper{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.anime-girl-img{
+	width: 20vw;
+	height: auto;
+	vertical-align: middle;
+}

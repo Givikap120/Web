@@ -1,0 +1,147 @@
+body{
+	border: 1px solid #000;
+	display: flex;
+	flex-flow: column;
+}
+
+.header{
+	grid-area: header;
+	background-color: lightblue;
+	display: flex;
+	align-items: center;
+}
+
+.base{
+	display: flex;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: lightblue;
+
+	display: flex;
+	align-items: center;
+}
+
+.flexrow{
+	display: flex;
+	flex-flow: row;
+	
+}
+.flexcolumn{
+	display: flex;
+	flex-flow: column;
+}
+
+.flexgrow{
+	flex-grow: 1;
+}
+
+
+.right{
+	flex-grow: 4;
+}
+
+.middle{
+	flex-grow: 3;
+}
+
+
+
+.headersign{
+	display: flex;
+	width: 50%;
+}
+
+.headersign-text{
+	background-color: white;
+	margin-left: 15%;
+
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-right: 5vw;
+	padding-left: 5vw;
+}
+
+.section-1{
+	text-align: right;
+	
+	display: flex;
+	width: 50%;
+}
+
+
+
+
+.footersign{
+	display: flex;
+	width: 50%;
+	justify-content: flex-end;
+}
+
+.footersign-text{
+	background-color: white;
+	margin-right: 5%;
+
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-right: 5vw;
+	padding-left: 5vw;
+}
+
+.section-7{
+	text-align: left;
+	display: flex;
+	width: 50%;
+}
+
+.section-2{
+	background-color: peachpuff;
+	display: flex;
+	justify-content: center;
+	
+	flex-grow: 1;
+}
+
+.section-3{
+	grid-area: top;
+	background-color: lightgreen;
+	text-align: center;
+}
+
+.section-5{
+	grid-area: right;
+	background-color: peachpuff;
+	text-align: center;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content:  center;
+}
+
+.section-6{
+	grid-area: bottom;
+	background-color: lightgreen;
+	text-align: center;
+	display: flex;
+}
+
+.section-4{
+	display: flex;
+	justify-content: center;
+	grid-area: middle;
+	background-color: whitesmoke;
+}
+
+.padding{
+	padding: 20px;
+}
+
+
+
+
+.anime-girl-img{
+	width: 20vw;
+	height: auto;
+}

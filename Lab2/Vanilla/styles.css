@@ -1,0 +1,103 @@
+body{
+	border: 1px solid #000;
+}
+
+.header{
+	background-color: lightblue;
+	height: 15vh;
+}
+
+.headersign{
+    text-align: center;
+	background-color: white;
+	
+	padding: 5%;
+	margin: 10%;
+}
+
+.headertext{
+	text-align: right;
+	float: right;
+	width: 75%;
+}
+
+.footer{
+	background-color: lightblue;
+	height: 15vh;
+}
+
+.footersign{
+
+	text-align: center;
+	background-color: white;
+	
+	padding: 5%;
+	margin: 10%;
+
+}
+
+.left{
+	background-color: peachpuff;
+	height: fit-content;
+	min-height: 70vh;
+	width: 25vw;
+	vertical-align: top;
+}
+
+.top{
+	background-color: lightgreen;
+	height: fit-content;
+	min-height: 10vh;
+}
+
+.right{
+	background-color: peachpuff;
+	height: fit-content;
+	min-height: 60vh;
+	width: 25vw;
+}
+
+.bottom{
+	background-color: lightgreen;
+	height: fit-content;
+	min-height: 10vh;
+}
+
+.middle{
+	background-color: whitesmoke;
+	height: fit-content;
+	min-height: 50vh;
+	vertical-align: top;
+}
+
+.block{
+	padding: 20px;
+}
+
+.horiz-fit-content{
+	
+	width: 0;
+}
+
+.vert-fit-content{
+	height: 0;
+}
+
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.anime-girl-helper{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.anime-girl-img{
+	width: 20vw;
+	height: auto;
+	vertical-align: middle;
+	margin: auto;
+	display: block;
+}
