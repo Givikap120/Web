@@ -40,6 +40,8 @@ body{
 
 .right{
 	flex-grow: 4;
+	flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .middle{
