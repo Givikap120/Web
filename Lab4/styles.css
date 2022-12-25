@@ -1,0 +1,165 @@
+html{
+	font-family: calibri;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: #edf4fd;
+	
+	width:100%;
+	height:100%;
+	margin: 0;
+	min-width: 350px;
+	
+	justify-content: space-between;
+}
+
+div{
+	
+}
+
+span{
+	resize: none;
+	border: none;
+	overflow: hidden;
+	    overflow-wrap: anywhere;
+	
+	font-family: calibri;
+	text-align: center;
+}
+
+.header{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer{
+	background-color: #333333;
+	color: white;
+	padding: 30px 30%;
+	margin-top: 100px;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 600px;
+	
+	justify-content: center;
+}
+
+.title{
+	color: #5595e8;
+	font-size: 30pt;
+	margin: 1vh;
+}
+
+.text{
+	width: 60%;
+	background-color: transparent;
+	margin: 1vh;
+}
+
+.cards{
+	display: flex;
+	width: 100%;
+    position: relative;
+		
+	justify-content: center;
+	
+	}
+
+.card{
+	margin: 15px;
+	padding: 20px 40px;
+	background-color: white;
+	
+	width: 180px;
+	
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-notbutton{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.card-img{
+	margin: 5%;
+}
+
+.card-title{
+	color: #5595e8;
+	font-size: 20pt;
+	margin: 5%;
+}
+
+.card-text{
+	font-size: 10pt;
+	margin: 5%;
+	width: 100%;
+	min-height: 52px;
+}
+
+.card-button{
+	display: flex;
+	background-color: #fa9746;
+	color: white;
+
+	font-weight: bold;
+	justify-content: center;
+	
+	border: solid;
+	border-color:#fa9746; 
+	
+	border-radius: 8px;
+	width: 60%;
+	min-width: fit-content;
+	padding: 10px;
+	
+	transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+.card-button:hover{
+	background-color: white;
+	color: #fa9746;
+}
+
+.orangeline{
+	position: absolute;
+	width: 100%;
+	min-width: 350px;
+	height: 200px;
+	top: 70px;
+	z-index: -1;
+	
+	background-color: #fa9746;
+}
+
+@media screen and (min-width: 886px)
+{
+	.cards{
+	flex-direction: row;
+	align-items: stretch;
+	}
+}
+
+@media screen and (max-width: 885px)
+{
+	.cards{
+	flex-direction: column;
+	align-items: center;
+	}
+}
