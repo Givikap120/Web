@@ -1,4 +1,6 @@
-var jsonURL = "https://givikap120.github.io/Web/Lab6/database.json";
+let baseURL = "http:\\localhost:3000";
+let userIP;
+getIP();
 
 document.getElementById("add-item-button").onclick = addItem;
 document.getElementById("remove-item-button").onclick = removeItem;
@@ -66,17 +68,33 @@ function updateName()
 function serverSave()
 {
 	let data = document.getElementById("main-content").innerHTML;
-	
+	let jsonToSend={};
+	jsonToSend["ip"] = userIP;
+	jsonToSend["htmlContent"] = data;
 
-	
+	jsonToSend = JSON.stringify(jsonToSend)
+
+	console.log(jsonToSend);
+	fetch(baseURL+"/save",{method: 'POST', body: jsonToSend, headers: {
+		'Content-Type': 'application/json'
+	  }}).then(res => console.log(res));
 }
 
 function serverLoad()
 {
 	let data;
-	let loaded = fetch(jsonURL).then(result => result.json()).then(data => {
-		document.getElementById("main-content").innerHTML = data["cringe"]; 
+	console.log(userIP);
+	let loaded = fetch(baseURL+"/load?ip="+ userIP).then(result => result.text()).then(data => {
+		document.getElementById("main-content").innerHTML = data; 
 	});
 	console.log(loaded);
-	
+}
+
+function getIP()
+{
+	fetch('https://www.cloudflare.com/cdn-cgi/trace').then(res => res.text()).then(data => {
+		let ipRegex = /ip=[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
+		ip = data.match(ipRegex)[0].replace('ip=','');
+		userIP = ip;
+	});
 }
