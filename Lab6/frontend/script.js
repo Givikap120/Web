@@ -1,4 +1,4 @@
-let baseURL = "https://tongueshort-ssym6m.stormkit.dev:3000";
+let baseURL = "https://tongueshort-ssym6m.stormkit.dev/Lab6/api:3000";
 let userIP;
 getIP();
 
