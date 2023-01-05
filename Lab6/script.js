@@ -1,5 +1,5 @@
 //let baseURL = "http:\\localhost";
-let userIP;
+let userIP = "undefined";
 getIP();
 
 document.getElementById("add-item-button").onclick = addItem;
@@ -119,7 +119,7 @@ function serverLoad()
 function getIP()
 {
 	fetch('https://www.cloudflare.com/cdn-cgi/trace').then(res => res.text()).then(data => {
-		let ipRegex = /ip=[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
+		let ipRegex = /ip=.*/
 		ip = data.match(ipRegex)[0].replace('ip=','');
 		userIP = ip.split('.').join('-');
 	});
